@@ -1,0 +1,73 @@
+    Updating crates.io index
+   Compiling libc v0.2.62
+   Compiling proc-macro2 v1.0.74
+     Running `rustc --crate-name build_script_build /root/.cargo/registry/src/github.com-1ecc6299db9ec823/libc-0.2.62/build.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type bin --emit=dep-info,link -C embed-bitcode=no -C debuginfo=2 -C metadata=f26aef2cfc6459c8 -C extra-filename=-f26aef2cfc6459c8 --out-dir /root/trading-programming/0701/demo/target/debug/build/libc-f26aef2cfc6459c8 -L dependency=/root/trading-programming/0701/demo/target/debug/deps --cap-lints allow`
+     Running `rustc --crate-name build_script_build --edition=2021 /root/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.74/build.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type bin --emit=dep-info,link -C embed-bitcode=no -C debuginfo=2 --cfg 'feature="default"' --cfg 'feature="proc-macro"' --cfg 'feature="span-locations"' -C metadata=1d2826db0e08391a -C extra-filename=-1d2826db0e08391a --out-dir /root/trading-programming/0701/demo/target/debug/build/proc-macro2-1d2826db0e08391a -L dependency=/root/trading-programming/0701/demo/target/debug/deps --cap-lints allow`
+     Running `/root/trading-programming/0701/demo/target/debug/build/libc-f26aef2cfc6459c8/build-script-build`
+     Running `/root/trading-programming/0701/demo/target/debug/build/proc-macro2-1d2826db0e08391a/build-script-build`
+     Running `rustc --crate-name libc /root/.cargo/registry/src/github.com-1ecc6299db9ec823/libc-0.2.62/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C debuginfo=2 -C metadata=d50d34013ae49d74 -C extra-filename=-d50d34013ae49d74 --out-dir /root/trading-programming/0701/demo/target/debug/deps -L dependency=/root/trading-programming/0701/demo/target/debug/deps --cap-lints allow --cfg freebsd11 --cfg libc_priv_mod_use --cfg libc_union --cfg libc_const_size_of --cfg libc_align --cfg libc_core_cvoid --cfg libc_packedN`
+   Compiling unicode-ident v1.0.0
+     Running `rustc --crate-name unicode_ident --edition=2018 /root/.cargo/registry/src/github.com-1ecc6299db9ec823/unicode-ident-1.0.0/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C debuginfo=2 -C metadata=57aea918d57ad740 -C extra-filename=-57aea918d57ad740 --out-dir /root/trading-programming/0701/demo/target/debug/deps -L dependency=/root/trading-programming/0701/demo/target/debug/deps --cap-lints allow`
+     Running `rustc --crate-name proc_macro2 --edition=2021 /root/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.74/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C debuginfo=2 --cfg 'feature="default"' --cfg 'feature="proc-macro"' --cfg 'feature="span-locations"' -C metadata=061ec9eb19ccda04 -C extra-filename=-061ec9eb19ccda04 --out-dir /root/trading-programming/0701/demo/target/debug/deps -L dependency=/root/trading-programming/0701/demo/target/debug/deps --extern unicode_ident=/root/trading-programming/0701/demo/target/debug/deps/libunicode_ident-57aea918d57ad740.rmeta --cap-lints allow --cfg span_locations --cfg wrap_proc_macro --cfg proc_macro_span`
+   Compiling cc v1.0.83
+     Running `rustc --crate-name cc --edition=2018 /root/.cargo/registry/src/github.com-1ecc6299db9ec823/cc-1.0.83/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C debuginfo=2 -C metadata=4fe595588908c69d -C extra-filename=-4fe595588908c69d --out-dir /root/trading-programming/0701/demo/target/debug/deps -L dependency=/root/trading-programming/0701/demo/target/debug/deps --extern libc=/root/trading-programming/0701/demo/target/debug/deps/liblibc-d50d34013ae49d74.rmeta --cap-lints allow`
+   Compiling quote v1.0.35
+     Running `rustc --crate-name quote --edition=2018 /root/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.35/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C debuginfo=2 --cfg 'feature="default"' --cfg 'feature="proc-macro"' -C metadata=96cc6fa34ac8dce4 -C extra-filename=-96cc6fa34ac8dce4 --out-dir /root/trading-programming/0701/demo/target/debug/deps -L dependency=/root/trading-programming/0701/demo/target/debug/deps --extern proc_macro2=/root/trading-programming/0701/demo/target/debug/deps/libproc_macro2-061ec9eb19ccda04.rmeta --cap-lints allow`
+   Compiling syn v2.0.46
+     Running `rustc --crate-name syn --edition=2021 /root/.cargo/registry/src/github.com-1ecc6299db9ec823/syn-2.0.46/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C debuginfo=2 --cfg 'feature="clone-impls"' --cfg 'feature="default"' --cfg 'feature="derive"' --cfg 'feature="full"' --cfg 'feature="parsing"' --cfg 'feature="printing"' --cfg 'feature="proc-macro"' --cfg 'feature="quote"' -C metadata=4f45af4a15b6699b -C extra-filename=-4f45af4a15b6699b --out-dir /root/trading-programming/0701/demo/target/debug/deps -L dependency=/root/trading-programming/0701/demo/target/debug/deps --extern proc_macro2=/root/trading-programming/0701/demo/target/debug/deps/libproc_macro2-061ec9eb19ccda04.rmeta --extern quote=/root/trading-programming/0701/demo/target/debug/deps/libquote-96cc6fa34ac8dce4.rmeta --extern unicode_ident=/root/trading-programming/0701/demo/target/debug/deps/libunicode_ident-57aea918d57ad740.rmeta --cap-lints allow`
+   Compiling link-cplusplus v1.0.9
+     Running `rustc --crate-name build_script_build --edition=2018 /root/.cargo/registry/src/github.com-1ecc6299db9ec823/link-cplusplus-1.0.9/build.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type bin --emit=dep-info,link -C embed-bitcode=no -C debuginfo=2 --cfg 'feature="default"' -C metadata=d74adc6f28db5b89 -C extra-filename=-d74adc6f28db5b89 --out-dir /root/trading-programming/0701/demo/target/debug/build/link-cplusplus-d74adc6f28db5b89 -L dependency=/root/trading-programming/0701/demo/target/debug/deps --extern cc=/root/trading-programming/0701/demo/target/debug/deps/libcc-4fe595588908c69d.rlib --cap-lints allow`
+   Compiling scratch v1.0.5
+     Running `rustc --crate-name build_script_build /root/.cargo/registry/src/github.com-1ecc6299db9ec823/scratch-1.0.5/build.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type bin --emit=dep-info,link -C embed-bitcode=no -C debuginfo=2 -C metadata=7f011f3f85f5296e -C extra-filename=-7f011f3f85f5296e --out-dir /root/trading-programming/0701/demo/target/debug/build/scratch-7f011f3f85f5296e -L dependency=/root/trading-programming/0701/demo/target/debug/deps --cap-lints allow`
+     Running `/root/trading-programming/0701/demo/target/debug/build/scratch-7f011f3f85f5296e/build-script-build`
+     Running `/root/trading-programming/0701/demo/target/debug/build/link-cplusplus-d74adc6f28db5b89/build-script-build`
+   Compiling termcolor v1.0.0
+     Running `rustc --crate-name termcolor /root/.cargo/registry/src/github.com-1ecc6299db9ec823/termcolor-1.0.0/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C debuginfo=2 -C metadata=e2c38527cf2002fb -C extra-filename=-e2c38527cf2002fb --out-dir /root/trading-programming/0701/demo/target/debug/deps -L dependency=/root/trading-programming/0701/demo/target/debug/deps --cap-lints allow`
+   Compiling unicode-width v0.1.0
+     Running `rustc --crate-name unicode_width /root/.cargo/registry/src/github.com-1ecc6299db9ec823/unicode-width-0.1.0/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C debuginfo=2 --cfg 'feature="default"' -C metadata=0dabd4f7f4bc0a58 -C extra-filename=-0dabd4f7f4bc0a58 --out-dir /root/trading-programming/0701/demo/target/debug/deps -L dependency=/root/trading-programming/0701/demo/target/debug/deps --cap-lints allow`
+   Compiling cxxbridge-flags v1.0.121
+     Running `rustc --crate-name cxxbridge_flags --edition=2021 /root/.cargo/registry/src/github.com-1ecc6299db9ec823/cxxbridge-flags-1.0.121/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C debuginfo=2 --cfg 'feature="default"' -C metadata=a1c6b9c05f2aaaaf -C extra-filename=-a1c6b9c05f2aaaaf --out-dir /root/trading-programming/0701/demo/target/debug/deps -L dependency=/root/trading-programming/0701/demo/target/debug/deps --cap-lints allow`
+   Compiling cxx v1.0.121
+     Running `rustc --crate-name build_script_build --edition=2021 /root/.cargo/registry/src/github.com-1ecc6299db9ec823/cxx-1.0.121/build.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type bin --emit=dep-info,link -C embed-bitcode=no -C debuginfo=2 --cfg 'feature="alloc"' --cfg 'feature="default"' --cfg 'feature="std"' -C metadata=d7130a695907e5e8 -C extra-filename=-d7130a695907e5e8 --out-dir /root/trading-programming/0701/demo/target/debug/build/cxx-d7130a695907e5e8 -L dependency=/root/trading-programming/0701/demo/target/debug/deps --extern cc=/root/trading-programming/0701/demo/target/debug/deps/libcc-4fe595588908c69d.rlib --extern cxxbridge_flags=/root/trading-programming/0701/demo/target/debug/deps/libcxxbridge_flags-a1c6b9c05f2aaaaf.rlib --cap-lints allow`
+   Compiling codespan-reporting v0.11.1
+     Running `rustc --crate-name codespan_reporting --edition=2018 /root/.cargo/registry/src/github.com-1ecc6299db9ec823/codespan-reporting-0.11.1/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C debuginfo=2 -C metadata=57ea1932b23a1c8b -C extra-filename=-57ea1932b23a1c8b --out-dir /root/trading-programming/0701/demo/target/debug/deps -L dependency=/root/trading-programming/0701/demo/target/debug/deps --extern termcolor=/root/trading-programming/0701/demo/target/debug/deps/libtermcolor-e2c38527cf2002fb.rmeta --extern unicode_width=/root/trading-programming/0701/demo/target/debug/deps/libunicode_width-0dabd4f7f4bc0a58.rmeta --cap-lints allow`
+error[E0382]: use of moved value: `blue`
+   --> /root/.cargo/registry/src/github.com-1ecc6299db9ec823/codespan-reporting-0.11.1/src/term/config.rs:180:55
+    |
+162 |     pub fn with_blue(blue: Color) -> Styles {
+    |                      ---- move occurs because `blue` has type `Color`, which does not implement the `Copy` trait
+...
+178 |             secondary_label: ColorSpec::new().set_fg(Some(blue)).clone(),
+    |                                                           ---- value moved here
+179 |
+180 |             line_number: ColorSpec::new().set_fg(Some(blue)).clone(),
+    |                                                       ^^^^ value used here after move
+
+error[E0382]: use of moved value: `blue`
+   --> /root/.cargo/registry/src/github.com-1ecc6299db9ec823/codespan-reporting-0.11.1/src/term/config.rs:181:57
+    |
+162 |     pub fn with_blue(blue: Color) -> Styles {
+    |                      ---- move occurs because `blue` has type `Color`, which does not implement the `Copy` trait
+...
+180 |             line_number: ColorSpec::new().set_fg(Some(blue)).clone(),
+    |                                                       ---- value moved here
+181 |             source_border: ColorSpec::new().set_fg(Some(blue)).clone(),
+    |                                                         ^^^^ value used here after move
+
+error[E0382]: use of moved value: `blue`
+   --> /root/.cargo/registry/src/github.com-1ecc6299db9ec823/codespan-reporting-0.11.1/src/term/config.rs:182:55
+    |
+162 |     pub fn with_blue(blue: Color) -> Styles {
+    |                      ---- move occurs because `blue` has type `Color`, which does not implement the `Copy` trait
+...
+181 |             source_border: ColorSpec::new().set_fg(Some(blue)).clone(),
+    |                                                         ---- value moved here
+182 |             note_bullet: ColorSpec::new().set_fg(Some(blue)).clone(),
+    |                                                       ^^^^ value used here after move
+
+For more information about this error, try `rustc --explain E0382`.
+error: could not compile `codespan-reporting` due to 3 previous errors
+
+Caused by:
+  process didn't exit successfully: `rustc --crate-name codespan_reporting --edition=2018 /root/.cargo/registry/src/github.com-1ecc6299db9ec823/codespan-reporting-0.11.1/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C debuginfo=2 -C metadata=57ea1932b23a1c8b -C extra-filename=-57ea1932b23a1c8b --out-dir /root/trading-programming/0701/demo/target/debug/deps -L dependency=/root/trading-programming/0701/demo/target/debug/deps --extern termcolor=/root/trading-programming/0701/demo/target/debug/deps/libtermcolor-e2c38527cf2002fb.rmeta --extern unicode_width=/root/trading-programming/0701/demo/target/debug/deps/libunicode_width-0dabd4f7f4bc0a58.rmeta --cap-lints allow` (exit status: 1)
+warning: build failed, waiting for other jobs to finish...

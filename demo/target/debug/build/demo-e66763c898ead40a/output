@@ -1,0 +1,55 @@
+cargo:CXXBRIDGE_PREFIX=demo
+cargo:CXXBRIDGE_DIR0=/root/trading-programming/0701/demo/target/debug/build/demo-e66763c898ead40a/out/cxxbridge/include
+cargo:CXXBRIDGE_DIR1=/root/trading-programming/0701/demo/target/debug/build/demo-e66763c898ead40a/out/cxxbridge/crate
+TARGET = Some("aarch64-unknown-linux-gnu")
+OPT_LEVEL = Some("0")
+HOST = Some("aarch64-unknown-linux-gnu")
+cargo:rerun-if-env-changed=CXX_aarch64-unknown-linux-gnu
+CXX_aarch64-unknown-linux-gnu = None
+cargo:rerun-if-env-changed=CXX_aarch64_unknown_linux_gnu
+CXX_aarch64_unknown_linux_gnu = None
+cargo:rerun-if-env-changed=HOST_CXX
+HOST_CXX = None
+cargo:rerun-if-env-changed=CXX
+CXX = None
+cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
+CRATE_CC_NO_DEFAULTS = None
+DEBUG = Some("true")
+CARGO_CFG_TARGET_FEATURE = Some("llvm14-builtins-abi,neon")
+cargo:rerun-if-env-changed=CXXFLAGS_aarch64-unknown-linux-gnu
+CXXFLAGS_aarch64-unknown-linux-gnu = None
+cargo:rerun-if-env-changed=CXXFLAGS_aarch64_unknown_linux_gnu
+CXXFLAGS_aarch64_unknown_linux_gnu = None
+cargo:rerun-if-env-changed=HOST_CXXFLAGS
+HOST_CXXFLAGS = None
+cargo:rerun-if-env-changed=CXXFLAGS
+CXXFLAGS = None
+running: "c++" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-4" "-fno-omit-frame-pointer" "-std=c++14" "-I" "/root/trading-programming/0701/demo/target/debug/build/demo-e66763c898ead40a/out/cxxbridge/include" "-I" "/root/trading-programming/0701/demo/target/debug/build/demo-e66763c898ead40a/out/cxxbridge/crate" "-Wall" "-Wextra" "-o" "/root/trading-programming/0701/demo/target/debug/build/demo-e66763c898ead40a/out/da0ae18008edd083-main.rs.o" "-c" "/root/trading-programming/0701/demo/target/debug/build/demo-e66763c898ead40a/out/cxxbridge/sources/demo/src/main.rs.cc"
+exit status: 0
+running: "c++" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-4" "-fno-omit-frame-pointer" "-std=c++14" "-I" "/root/trading-programming/0701/demo/target/debug/build/demo-e66763c898ead40a/out/cxxbridge/include" "-I" "/root/trading-programming/0701/demo/target/debug/build/demo-e66763c898ead40a/out/cxxbridge/crate" "-Wall" "-Wextra" "-o" "/root/trading-programming/0701/demo/target/debug/build/demo-e66763c898ead40a/out/src/blobstore.o" "-c" "src/blobstore.cc"
+exit status: 0
+cargo:rerun-if-env-changed=AR_aarch64-unknown-linux-gnu
+AR_aarch64-unknown-linux-gnu = None
+cargo:rerun-if-env-changed=AR_aarch64_unknown_linux_gnu
+AR_aarch64_unknown_linux_gnu = None
+cargo:rerun-if-env-changed=HOST_AR
+HOST_AR = None
+cargo:rerun-if-env-changed=AR
+AR = None
+cargo:rerun-if-env-changed=ARFLAGS_aarch64-unknown-linux-gnu
+ARFLAGS_aarch64-unknown-linux-gnu = None
+cargo:rerun-if-env-changed=ARFLAGS_aarch64_unknown_linux_gnu
+ARFLAGS_aarch64_unknown_linux_gnu = None
+cargo:rerun-if-env-changed=HOST_ARFLAGS
+HOST_ARFLAGS = None
+cargo:rerun-if-env-changed=ARFLAGS
+ARFLAGS = None
+running: ZERO_AR_DATE="1" "ar" "cq" "/root/trading-programming/0701/demo/target/debug/build/demo-e66763c898ead40a/out/libcxxbridge-demo.a" "/root/trading-programming/0701/demo/target/debug/build/demo-e66763c898ead40a/out/da0ae18008edd083-main.rs.o" "/root/trading-programming/0701/demo/target/debug/build/demo-e66763c898ead40a/out/src/blobstore.o"
+exit status: 0
+running: "ar" "s" "/root/trading-programming/0701/demo/target/debug/build/demo-e66763c898ead40a/out/libcxxbridge-demo.a"
+exit status: 0
+cargo:rustc-link-lib=static=cxxbridge-demo
+cargo:rustc-link-search=native=/root/trading-programming/0701/demo/target/debug/build/demo-e66763c898ead40a/out
+cargo:rerun-if-changed=src/main.rs
+cargo:rerun-if-changed=src/blobstore.cc
+cargo:rerun-if-changed=include/blobstore.h
